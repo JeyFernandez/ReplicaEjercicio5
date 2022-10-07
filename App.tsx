@@ -9,13 +9,12 @@ import {
   ScrollView,
   ViewBase,
 } from "react-native";
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import {
   AntDesign,
   Foundation, 
   Feather,
   FontAwesome5,
-  Ionicons,
   Entypo,
   MaterialIcons,
   Fontisto,
@@ -38,11 +37,37 @@ export default function App() {
           <View style={styles.product}>
             <Image
             source={image}
-            style={{height:200 , width:200}}
+            style={{height:100 , width:175}}
             />
+            <View style={styles.detalle}>
             <Text>Aldo</Text>
             <Text>Almond Toe</Text>
             <Text>Size: 39 us</Text>
+            <Text>AED 45</Text>
+            </View>
+            <View>
+            <AntDesign name="plus" />
+            <Text>1</Text>
+            <Ionicons name ="remove-outline" />
+            </View>
+          </View>
+
+          <View style={styles.product}>
+            <Image
+            source={image}
+            style={{height:100 , width:175}}
+            />
+            <View style={styles.detalle}>
+            <Text>Aldo</Text>
+            <Text>Almond Toe</Text>
+            <Text>Size: 39 us</Text>
+            <Text>AED 45</Text>
+            </View>
+            <View>
+            <AntDesign name="plus" />
+            <Text>1</Text>
+            <Ionicons name ="remove-outline" />
+            </View>
           </View>
       </ScrollView>
     </View>
@@ -85,8 +110,8 @@ car:{
   messagge:{
     marginTop:12,
     padding:10,
-    paddingRight:90,
-    paddingLeft:90,
+    paddingRight:87,
+    paddingLeft:87,
     backgroundColor:'#333333',
     flexDirection:'row',
     fontSize:25,
@@ -97,6 +122,13 @@ car:{
     fontSize:30,
   },
   product:{
+    margin:10,
+    padding:20,
+    backgroundColor:'#F5F5F5',
+    marginTop:50,
     flexDirection:'row',
+  },
+  detalle:{
+    marginLeft:20,
   },
 });
