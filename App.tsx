@@ -45,7 +45,7 @@ export default function App() {
             <Text>Size: 39 us</Text>
             <Text>AED 45</Text>
             </View>
-            <View>
+            <View style={styles.btn}>
             <AntDesign name="plus" />
             <Text>1</Text>
             <Ionicons name ="remove-outline" />
@@ -63,7 +63,7 @@ export default function App() {
             <Text>Size: 39 us</Text>
             <Text>AED 45</Text>
             </View>
-            <View>
+            <View style={styles.btn}>
             <AntDesign name="plus" />
             <Text>1</Text>
             <Ionicons name ="remove-outline" />
@@ -127,6 +127,9 @@ car:{
     backgroundColor:'#F5F5F5',
     marginTop:50,
     flexDirection:'row',
+  },
+  btn:{
+    marginLeft:80,
   },
   detalle:{
     marginLeft:20,
